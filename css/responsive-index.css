@@ -1,0 +1,81 @@
+#restaurants-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+header {
+  width: 100%;
+}
+
+@media screen and (min-width: 1910px) {
+    #restaurants-list li {
+    	flex-basis: 26%;
+    }
+}
+
+@media screen and (min-width: 1700px) and (max-width: 1909px) {
+    #restaurants-list li {
+    	flex-basis: 25%;
+    }
+}
+@media screen and (min-width: 1400px) and (max-width: 1699px) {
+    #restaurants-list li {
+    	flex-basis: 23%;
+    }
+}
+@media screen and (min-width: 1285px) and (max-width: 1399px) {
+    #restaurants-list li {
+    	flex-basis: 39%;
+    }
+}
+@media screen and (min-width: 1099px) and (max-width: 1284px) {
+    #restaurants-list li {
+    	flex-basis: 37%;
+    }
+}
+@media screen and (min-width: 951px) and (max-width: 1098px) {
+    #restaurants-list li {
+    	flex-basis: 100%;
+    }
+}
+@media screen and (min-width: 950px) {
+    #maincontent {
+      width: 69%;
+      margin: 0 auto;
+    }
+    header, #footer {
+      width: 100%;
+    }
+}
+@media screen and (min-width: 760px) and (max-width: 950px) {
+    #restaurants-list li {
+    	flex-basis: 37%;
+    }
+}
+@media screen and (max-width: 760px) {
+    #restaurants-list {
+        text-align: center;
+    }
+    #restaurants-list li {
+    	flex-basis: 100%;
+    }
+}
+@media screen and (max-width: 490px) {
+    .filter-options h2 {
+      margin: 2px;
+    }
+    #neighborhoods-select {
+      width: 170px;
+      margin: 1px;
+    }
+    #cuisines-select {
+      width: 120px
+    }
+    #restaurants-list li {
+      margin: 2px;
+      padding: 0 5px 25px;
+      text-align: center;
+    }
+    #restaurants-list .restaurant-img {
+      border-radius:30px;
+    }
+}
