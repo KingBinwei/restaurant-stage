@@ -8,11 +8,17 @@ var markers = []
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
  */
 document.addEventListener('DOMContentLoaded', (event) => {
+  initFocus();
   initMap(); // added 
   fetchNeighborhoods();
   fetchCuisines();
 });
 
+// init focus
+initFocus = () => {
+  let neighborhoodsSelect = document.querySelector('#neighborhoods-select');
+  neighborhoodsSelect.focus();
+}
 /**
  * Fetch all neighborhoods and set their HTML.
  */
@@ -160,6 +166,7 @@ createRestaurantHTML = (restaurant) => {
 
   const image = document.createElement('img');
   image.className = 'restaurant-img';
+  image.setAttribute('alt', 'restaurant picture');
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
   li.append(image);
 
