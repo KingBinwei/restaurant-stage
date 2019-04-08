@@ -13,7 +13,7 @@ registerServiceWorker = () => {
     });
   }
 }
-_registerServiceWorker();
+registerServiceWorker();
 /**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
  */
